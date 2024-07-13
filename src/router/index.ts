@@ -1,22 +1,25 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
+import HomeView from "../views/HomeView.vue";
+import SearchView from "../views/SearchView.vue";
+import ComparisonView from "../views/ComparisonView.vue";
+import ReservationView from "../views/ReservationView.vue";
 
 const routes: Array<RouteRecordRaw> = [
-  { path: "/", name: "Home", component: () => import("../views/Home.vue") },
+  { path: "/", name: "Home", component: HomeView },
   {
     path: "/search",
     name: "Search",
-    component: () => import("../views/Search.vue"),
+    component: SearchView,
   },
   {
     path: "/comparison",
     name: "Comparison",
-    component: () => import("../views/Comparison.vue"),
+    component: ComparisonView,
   },
   {
     path: "/reservation",
     name: "Reservation",
-    component: () => import("../views/Reservation.vue"),
+    component: ReservationView,
   },
 ];
 
