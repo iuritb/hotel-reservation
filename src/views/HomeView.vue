@@ -3,7 +3,6 @@
     <h1>Bem-vindo ao Sistema de Reserva de Hotéis</h1>
     <router-link to="/search">Pesquisar Hotéis</router-link>
     <div>
-      <!-- Use 'v-for' para iterar sobre os hotéis e exibir suas informações -->
       <div v-for="hotel in hotelStore.hotels" :key="hotel.id">
         <h2>{{ hotel.name }}</h2>
         <p>{{ hotel.location }}</p>
@@ -17,6 +16,10 @@
 
 <script lang="ts">
 import { defineComponent, onMounted } from "vue";
+//Components
+// import HotelList from "@/components/HotelList.vue";
+
+//Store
 import useHotelStore from "@/store/hotelStore";
 
 export default defineComponent({

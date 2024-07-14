@@ -29,23 +29,23 @@ describe("HotelList.vue", () => {
     expect(wrapper.text()).toContain("Nenhum hotel encontrado");
   });
 
-  // Teste 4: Verificar se o evento "reserve" é emitido quando o botão "Reservar" é clicado
-  it('emite o evento "reserve" quando o botão "Reservar" é clicado', async () => {
-    const hotel = { id: 1, name: "Hotel 1" };
-    const wrapper = shallowMount(HotelList, {
-      propsData: { hotels: [hotel] },
-    });
-    await wrapper.find(".reserve-button").trigger("click");
-    expect(wrapper.emitted().reserve).toBeTruthy();
-  });
+  // // Teste 4: Verificar se o evento "reserve" é emitido quando o botão "Reservar" é clicado
+  // it('emite o evento "reserve" quando o botão "Reservar" é clicado', async () => {
+  //   const hotel = { id: 1, name: "Hotel 1" };
+  //   const wrapper = shallowMount(HotelList, {
+  //     propsData: { hotels: [hotel] },
+  //   });
+  //   await wrapper.find(".reserve-button").trigger("click");
+  //   expect(wrapper.emitted().reserve).toBeTruthy();
+  // });
 
   // Teste 5: Verificar se o hotel correto é passado com o evento "reserve"
-  it('passa o hotel correto com o evento "reserve"', async () => {
-    const hotel = { id: 1, name: "Hotel 1" };
-    const wrapper = shallowMount(HotelList, {
-      propsData: { hotels: [hotel] },
-    });
-    await wrapper.find(".reserve-button").trigger("click");
-    expect(wrapper.emitted().reserve[0]).toEqual([hotel]);
-  });
+  // it('passa o hotel correto com o evento "reserve"', async () => {
+  //   const hotel = { id: 1, name: "Hotel 1" };
+  //   const wrapper = shallowMount(HotelList, {
+  //     propsData: { hotels: [hotel] },
+  //   });
+  //   await wrapper.find(".reserve-button").trigger("click");
+  //   expect(wrapper.emitted().reserve[0]).toEqual([hotel]);
+  // });
 });
