@@ -1,11 +1,4 @@
-interface Reservation {
-  id: number;
-  hotelId: number;
-  userId: number;
-  roomId: number;
-  checkInDate: string;
-  checkOutDate: string;
-}
+import { Reservation } from "@/types/reservation";
 
 const reservations: Reservation[] = [
   {

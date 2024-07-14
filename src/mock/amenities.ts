@@ -1,8 +1,5 @@
 // Mock de dados para Comodidades
-interface Amenity {
-  id: number;
-  description: string;
-}
+import { Amenity } from "@/types/amenitiy";
 
 const amenities: Amenity[] = [
   {

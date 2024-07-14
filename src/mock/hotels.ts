@@ -1,11 +1,4 @@
-interface Hotel {
-  id: number;
-  name: string;
-  location: string;
-  rooms: number;
-  amenities: string[];
-  price: number; // Adicionando o atributo preço
-}
+import { Hotel } from "@/types/hotel";
 
 const hotels: Hotel[] = [
   {
@@ -27,6 +20,14 @@ const hotels: Hotel[] = [
   {
     id: 3,
     name: "Hotel C",
+    location: "Cidade Z",
+    rooms: 150,
+    amenities: ["Wi-Fi gratuito", "Estacionamento", "Spa"],
+    price: 180,
+  },
+  {
+    id: 4,
+    name: "Hotel abc",
     location: "Cidade Z",
     rooms: 150,
     amenities: ["Wi-Fi gratuito", "Estacionamento", "Spa"],
