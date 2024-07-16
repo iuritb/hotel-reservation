@@ -1,6 +1,13 @@
 # hotel-reservation
 
-## Project setup
+## Descrição
+
+Aplicação web em Vue.js e TypeScript para pesquisar, comparar e reservar hotéis. Permite busca por destino, datas, quartos e hóspedes, comparação de hotéis selecionados e realização de reservas. Foco em interface responsiva, acessível e de alto desempenho.
+
+## Instalação
+
+
+### Project setup
 ```
 yarn install
 ```
@@ -14,11 +21,3 @@ yarn serve
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
