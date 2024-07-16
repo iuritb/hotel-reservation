@@ -1,4 +1,3 @@
-// Primeiro, importe 'defineStore' de 'pinia'
 import { defineStore } from "pinia";
 import hotels from "../mock/hotels";
 

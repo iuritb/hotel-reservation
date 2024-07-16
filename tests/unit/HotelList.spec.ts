@@ -1,6 +1,6 @@
 // HotelList.spec.ts
 import { shallowMount } from "@vue/test-utils";
-import HotelList from "@/components/HotelList.vue";
+import HotelList from "@/components/ui/HotelList.vue";
 
 describe("HotelList.vue", () => {
   // Teste 1: Verificar se o componente é renderizado corretamente
